@@ -1,17 +1,25 @@
 {
-    "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
-    "name": "melange-basic-project",
-    "version": "0.0.1",
-    "sources": {
-      "dir" : "src"
+  "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
+  "name": "melange-basic-project",
+  "version": "0.0.1",
+  "sources": [
+    {
+      "dir" : "src",
+      "subdirs" : true
     },
-    "package-specs": {
-      "module": "commonjs"
-    },
-    "suffix": ".bs.js",
-    "bs-dependencies": [
-    ],
-    "warnings": {
-      "error" : "+101"
-    },
+    {
+      "dir": "__tests__",
+      "type": "dev",
+      "subdirs" : true
+    }
+  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [],
+  "warnings": {
+    "error": "+101"
   }
+}
