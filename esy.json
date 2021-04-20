@@ -1,16 +1,13 @@
 {
+  "name": "melange-algorithms",
   "dependencies": {
-    "bs-platform": "*"
-  },
-  "resolutions": {
-    "bs-platform": "melange-re/melange#55d6f06",
-    "ocaml": "melange-re/ocaml#75f22c8"
+    "ocaml": "4.12.x",
+    "melange": "melange-re/melange",
+    "@opam/ocaml-lsp-server": "*"
   },
   "esy": {
     "buildsInSource": "unsafe",
-    "build": [
-      "ln -sfn #{bs-platform.install} node_modules/bs-platform"
-    ]
+    "build": "bsb -make-world"
   },
   "installConfig": {
     "pnp": false

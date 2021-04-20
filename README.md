@@ -1,6 +1,7 @@
 # melange-basic-template
 
 A simple project template using [Melange](https://github.com/melange-re/melange).
+Includes examples from [decent-algorithms/rhythm](https://github.com/decent-algorithms/rhythm)
 
 ## Getting started
 
